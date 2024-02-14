@@ -1,0 +1,105 @@
+.main{
+    display: flex;
+}
+.leftSide{
+    width: 60%;
+    /* height: auto; */
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.leftSideText{
+    display: flex;
+    font-weight: 700;
+    font-size: 44px;
+    width: 65%;
+    margin-left: 25px;
+    color: rgb(117 0 184);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.textSlogan{
+    color: rgb(117 0 184);
+    font-weight: 600;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+}
+
+.rightSide p{
+font-size: 31px;
+font-weight: 700;
+}
+
+.login-btn-google:hover{
+    background-color: rgb(117 0 184);;
+    transition: 0.5s;
+    color: white;
+}
+
+.login-btn-google{
+    background: white;
+    display: flex;
+    border: none;
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: rgb(117 0 184);
+}
+
+.login-btn-google svg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media(min-height:600px) 
+{
+    nav a{
+        color:antiquewhite
+    }
+    body{
+        background-color: rgb(16 16 16)
+    }
+    .main{
+        display: block !important;
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    }
+    .leftSide{
+        display: block;
+        background-color: transparent;
+        width: 100% !important;
+        height: 60vh;
+    }
+    .leftSideText {
+        text-align: center;
+        margin: auto;
+        height: 25%;
+        padding-top: 50px;
+    }
+    .textSlogan{
+        margin: auto;
+        text-align: center;
+        width: 75%;
+        font-size: 20px;
+    }
+    .rightSide{
+        height: 28vh;
+    }
+    .textSlogan{
+        padding-top: 50px;
+    }
+}
